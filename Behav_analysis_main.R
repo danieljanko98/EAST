@@ -75,9 +75,12 @@ rm(main_model)
 # Exploring the results
 modelExploration(model, inform_priors)
 
+# Exploring the different outputs
 print(ppCheck)
 print(model_figure)
 print(Results_RT)
+# Specify which plot to show (indices based on the ordering of the priors)
+print(plot_list_RT[1])
 
 #######################################################################
 #                        Accuracy Logistic Model                      #
@@ -113,8 +116,10 @@ load('Bayes_model_log_main.RData')
 model <- log_model_main
 LogModelExploration(model, inform_priors)
 
+# Exploring the different outputs
 print(Results_ACC)
-print(plot_list_ACC[9])
+# Specify which plot to show (indices based on the ordering of the priors)
+print(plot_list_ACC[1])
 print(ppCheck)
 print(log_model_figure)
 
