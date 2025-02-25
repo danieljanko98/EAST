@@ -2,6 +2,9 @@
 #                         EAST Main Model Fitting                     #
 #######################################################################
 
+# This script fits a linear Bayesian model on response time and Bayesian logistic regression on Accuracy. 
+# Further processing of the results nad extraction of specific matrics is also included to allow for interpretation of the results. 
+
 packages <- c("brms", "bayesplot", "hypr", "rstan", "ggplot2", "tidyr", "dplyr", 'lme4', 'stringr', 'ggridges')
 
 # Function to check if packages are installed, install them if not, and load them
