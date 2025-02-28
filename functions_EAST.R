@@ -155,7 +155,7 @@ timeSeries <- function(data) {
     }
   }
   data <- as.data.frame(data)
-  tsd_vector <- rep(c(0, 1), length.out = 60)
+  tsd_vector <<- rep(c(0, 1), length.out = 60)
   data$TSD <- ifelse(data$TSD == '1', 0, 1)
   
   data <<- data
